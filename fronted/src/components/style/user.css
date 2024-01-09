@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dcdce6;
+}
+.profile-box{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 30px #4747470b;
+}
+.title{
+    text-align: center;
+}
+
+.title h4{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-block: 20px;
+}
+.profile img{
+    border: 4px #a2a2a2b0 solid;
+    width: 135px;
+    border-radius: 50%;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    gap: 6;
+}
+.textbox input,button{
+    border: 0;
+    outline: 0;
+    padding: 15px 10px;
+    margin: 10px 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.textbox input{
+    background-color: #dcdce6;
+    color: #000000;
+}
+.textbox button{
+    background-color: rgb(252, 57, 18);
+    color: #fff;
+    margin-bottom: 20px;
+}
+.textbox button:hover{
+    background-color: rgb(248, 79, 45);
+}
+.register{
+    text-align: center;
+}
+.register a{
+    color: rgb(255, 42, 0);
+    text-decoration: none;
+}
+input[type='file']{
+    display: none;
+}
+.name{
+    display: flex;
+    width: 75%;
+    gap: 10;
+}
+@media(max-width:776px){
+    .profile-box{
+        width: 50%;
+    }
+    .name{
+        flex-direction: column;
+        width: 100%;
+    }
+}
